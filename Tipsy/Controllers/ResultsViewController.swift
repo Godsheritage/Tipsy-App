@@ -10,10 +10,14 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     var resultsValue : String?
+    var people : String?
+    var tipPercent : Double?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         totalLabel.text = resultsValue!
+        settingsLabel.text = "Split between \(people!) with \(tipPercent!)% tip"
 
         // Do any additional setup after loading the view
     }

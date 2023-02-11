@@ -55,8 +55,11 @@ class CalculatorViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "resultsViewSegue" {
-              let destinationVC = segue.destination as! ResultsViewController
+            let destinationVC = segue.destination as! ResultsViewController
             destinationVC.resultsValue = String(total)
+            destinationVC.people = splitNumberLabel.text
+            destinationVC.tipPercent = percentVal * 100
+            
           }
     }
     
