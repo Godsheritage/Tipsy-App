@@ -58,10 +58,6 @@ class CalculatorViewController: UIViewController {
               let destinationVC = segue.destination as! ResultsViewController
             destinationVC.resultsValue = String(total)
           }
-        
-        
-        
-        
     }
     
     
